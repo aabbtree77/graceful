@@ -12,7 +12,7 @@
 
 # Part 1 — Graceful shutdown
 
-In go, a server with graceful shutdown is typically done like this: 
+In Go, a server with graceful shutdown follows this code: 
 
 ```go
 package main
@@ -124,7 +124,7 @@ func main() {
 How is this done in Nim and D?
 
 
-**deepseek:**
+**DeepSeek:**
 
 # Graceful HTTP shutdown in Nim and D
 
@@ -227,7 +227,7 @@ One behavioural note: your Go snippet reassigns `ctx` via `signal.NotifyContext(
 List all the essential primitives needed for complete precise web server functionality with timeouts and graceful shutdowns in Go, Nim, and D. Go needs context, goroutines, what else underneath? What are these in Nim and D? Which one is most solid, one way/standard/least experimental?
 
 
-**deepseek:**
+**DeepSeek:**
 
 ## Primitives for a precise HTTP server with timeouts + graceful shutdown
 
@@ -457,7 +457,7 @@ So: if the goal is *"complete precise web server with timeouts and graceful shut
 What's the default architecture for parallelism and concurrency in each? Is Nim really that far behind Go with solid defaults here, and is D that close? Do Nim and D provide green threads like goroutines and feature parity as in Go, how much harder is to do concurrency and parallelism in D and Nim than in Go?
 
 
-**deepseek:**
+**DeepSeek:**
 
 ## Concurrency & parallelism architecture: Go vs Nim vs D
 
