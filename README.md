@@ -1,3 +1,5 @@
+<img src="woman-with-a-parasol.jpg"  alt="Woman with a Parasol - Madame Monet and Her Son, Claude Monet 1875" width="100%" >
+
 # Graceful HTTP servers: Go vs Nim vs D
 
 > A three-part comparison — shutdown semantics, concurrency primitives, and ergonomics.
@@ -12,7 +14,7 @@
 
 # Part 1 — Graceful shutdown
 
-In Go, a server with graceful shutdown follows this code: 
+_In Go, a server with graceful shutdown follows this code:_ 
 
 ```go
 package main
@@ -121,7 +123,7 @@ func main() {
 } 
 ```
 
-How is this done in Nim and D?
+_How is this done in Nim and D?_
 
 
 **DeepSeek:**
@@ -224,7 +226,7 @@ One behavioural note: your Go snippet reassigns `ctx` via `signal.NotifyContext(
 
 # Part 2 — Primitives & verdict
 
-List all the essential primitives needed for complete precise web server functionality with timeouts and graceful shutdowns in Go, Nim, and D. Go needs context, goroutines, what else underneath? What are these in Nim and D? Which one is most solid, one way/standard/least experimental?
+_List all the essential primitives needed for complete precise web server functionality with timeouts and graceful shutdowns in Go, Nim, and D. Go needs context, goroutines, what else underneath? What are these in Nim and D? Which one is most solid, one way/standard/least experimental?_
 
 
 **DeepSeek:**
@@ -454,7 +456,7 @@ So: if the goal is *"complete precise web server with timeouts and graceful shut
 
 # Part 3 — Concurrency & parallelism
 
-What's the default architecture for parallelism and concurrency in each? Is Nim really that far behind Go with solid defaults here, and is D that close? Do Nim and D provide green threads like goroutines and feature parity as in Go, how much harder is to do concurrency and parallelism in D and Nim than in Go?
+_What's the default architecture for parallelism and concurrency in each? Is Nim really that far behind Go with solid defaults here, and is D that close? Do Nim and D provide green threads like goroutines and feature parity as in Go, how much harder is to do concurrency and parallelism in D and Nim than in Go?_
 
 
 **DeepSeek:**
